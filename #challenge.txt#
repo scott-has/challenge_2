@@ -1,0 +1,74 @@
+•	Everyone is welcome! Steven, Matthew and I will Judge the solutions
+•	Deadline is 12pm Monday 6/4
+•	Solution must include RSpec tests
+•	The solution must be in Ruby
+•	Most points go to the most elegant, readable and tested solution (not necessarily the most verbose solution!)
+•	I will dock points for unnecessary complexity
+•	The more "rubyesque" the better (I.e. Ruby has its own 'syntactic sugar'. Use that as much as possible)
+•	Only core ruby + spec is allowed. No rails or any other frameworks
+•	I must be able to run the tests and application from my command line 
+•	Solution must be placed in a public github repository, from which I will clone and evaluate. (A free github account is all you need).
+•	Code must run without error, tests must pass 
+•	I will not be answering questions about the problem. Covering all the requirements is part of this problem, therefor answering clarifying questions about them would be an unfair advantage. 
+•	I will answer ruby syntax questions
+•	Any rules that I forgot that are common sense ( :p ) 
+
+Problem: 
+
+SALES TAXES
+
+Basic sales tax is applicable at a rate of 10% on all goods, except books,
+food, and medical products that are exempt. Import duty is an additional
+sales tax applicable on all imported goods at a rate of 5%, with no
+exemptions.
+
+When I purchase items I receive a receipt which lists the name of all the
+items and their price (including tax), finishing with the total cost of the
+items, and the total amounts of sales taxes paid.  The rounding rules for
+sales tax are that for a tax rate of n%, a shelf price of p contains
+(np/100 rounded up to the nearest 0.05) amount of sales tax.
+
+Write an application that prints out the receipt details for these shopping
+baskets...
+INPUT:
+
+Input 1:
+1 book at 12.49
+1 music CD at 14.99
+1 chocolate bar at 0.85
+
+Input 2:
+1 imported box of chocolates at 10.00
+1 imported bottle of perfume at 47.50
+
+Input 3:
+1 imported bottle of perfume at 27.99
+1 bottle of perfume at 18.99
+1 packet of headache pills at 9.75
+1 box of imported chocolates at 11.25
+
+OUTPUT
+
+Output 1:
+1 book : 12.49
+1 music CD: 16.49
+1 chocolate bar: 0.85
+Sales Taxes: 1.50
+Total: 29.83
+
+Output 2:
+1 imported box of chocolates: 10.50
+1 imported bottle of perfume: 54.65
+Sales Taxes: 7.65
+Total: 65.15
+
+Output 3:
+1 imported bottle of perfume: 32.19
+1 bottle of perfume: 20.89
+1 packet of headache pills: 9.75
+1 imported box of chocolates: 11.85
+Sales Taxes: 6.70
+Total: 74.68
+
+
+

@@ -1,0 +1,24 @@
+item_types: #followed by keywords that identify types
+  books: 
+    book
+  food:
+    chocolate
+  medical_products:
+    ache
+  imported:
+    imported
+  
+  
+taxes:
+  sales:
+    rate: 10 
+    included_items:
+    excluded_items:
+      food:
+      books:
+      medical_products:
+  import:
+    rate: 5
+    excluded_items:
+    included_items:
+      imported:

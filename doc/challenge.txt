@@ -1,0 +1,14 @@
+•	Everyone is welcome! Steven, Matthew and I will Judge the solutions
+•	Deadline is 12pm Monday 6/4
+•	Solution must include RSpec tests
+•	The solution must be in Ruby
+•	Most points go to the most elegant, readable and tested solution (not necessarily the most verbose solution!)
+•	I will dock points for unnecessary complexity
+•	The more "rubyesque" the better (I.e. Ruby has its own 'syntactic sugar'. Use that as much as possible)
+•	Only core ruby + spec is allowed. No rails or any other frameworks
+•	I must be able to run the tests and application from my command line 
+•	Solution must be placed in a public github repository, from which I will clone and evaluate. (A free github account is all you need).
+•	Code must run without error, tests must pass 
+•	I will not be answering questions about the problem. Covering all the requirements is part of this problem, therefor answering clarifying questions about them would be an unfair advantage. 
+•	I will answer ruby syntax questions
+•	Any rules that I forgot that are common sense ( :p ) 
