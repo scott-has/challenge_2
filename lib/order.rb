@@ -43,15 +43,15 @@ module Order
 			else
 				lines = read_from_file(args)
 			end
-			raise "invalid order" unless lines			
-			lines.map{|line| create_order_line(line)}
+			#raise "invalid order" unless lines			
+			lines.map!{|line| create_order_line(line)}
 			lines.compact
 		end
 	
 		def self.read_from_file(args)
 			order_lines = []
 			file = File.new(args.shift)
-			file.each {|line| order_lines << line}
+			file.each {|line| order_lines << line.chomp}
 			order_lines
 		end
 		
@@ -59,9 +59,10 @@ module Order
 			order_lines = []
 			puts("Enter order lines, type <quit> to terminate input")
 			begin 
-				line = STDIN.gets.chomp!
+				line = STDIN.gets.chomp
 				order_lines  << line if line != "quit"
 			end	while line != "quit"
+			order_lines
 		end
 	end
 

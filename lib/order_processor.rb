@@ -21,7 +21,6 @@ class OrderProcessor
 		@total_tax = 0
 		@total_items_cost = 0
 		@order_lines.each do |line|
-			puts line.inspect
 			@total_tax += line.calculate_line_tax (@tax)	
 			@total_items_cost += line.total
 		end	

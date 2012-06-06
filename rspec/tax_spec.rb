@@ -8,8 +8,8 @@ describe @tax do
   it "initailizes correctly" do
   	(@tax.taxes.keys & ["sales", "import"]).length.should eq(2)
 	(@tax.item_types.keys & %w{books food medical_products imported}).length.should eq(4)
-	puts @tax.taxes["sales"].inspect
-	puts @tax.taxes["import"].inspect
+	#puts @tax.taxes["sales"].inspect
+	#puts @tax.taxes["import"].inspect
 	@tax.taxes["sales"]["included_items"].should be_nil
 	@tax.taxes["import"]["excluded_items"].should be_nil
   end

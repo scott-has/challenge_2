@@ -43,9 +43,7 @@ attr_accessor :taxes, :item_types
 
 			excluded_items = tax[Parameters][ExcludedItems]
 			included_items = tax[Parameters][IncludedItems]
-			#puts "excluded_items = #{excluded_items}\tincluded_items =#{included_items}"
 			if tax_applies(excluded_items, included_items, description)
-				#puts "calculating tax #{tax.inspect} for #{description}"
 				line_tax += round_to_05(line_total  * tax[Parameters][Rate]  / 100)
 			end
 		end	
@@ -53,15 +51,12 @@ attr_accessor :taxes, :item_types
 	end
 	
 	def tax_applies(excluded_items, included_items, item_description)
-		#puts "excluded_items = #{excluded_items} included_items = #{included_items}"
-
 		if !included_items.nil?
 			if (included_items.keys & get_item_types(item_description)).length > 0
 				return true
 			else
 				return false
 			end
-			#return true if (included_items.keys & get_item_types(item_description)).length > 0
 		end
 
 		return true if excluded_items.nil?
